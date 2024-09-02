@@ -11,38 +11,55 @@
     };
     spinner();
     
- // Get the logo element
+// Get the logo and nav bar elements
 const logo = document.getElementById('logo');
+const navBar = document.querySelector('nav.navbar');
 
-// Store the original size and position of the logo
-const originalWidth = '100px';
-const originalHeight = '115px';
-const originalPaddingTop = '20px';
-
+// Store the original size and position of the logo and nav bar
+const originalLogoWidth = '100px';
+const originalLogoHeight = '115px';
+const originalLogoPaddingTop = '20px';
+const originalNavBarPaddingTop = '15px'; // adjust this value to your liking
+const originalNavBarHeight = '125px'; // adjust this value to your liking
+const originalNavBarpadding = '80px 0'; 
 // Add an event listener to the window's scroll event
 window.addEventListener('scroll', () => {
   // Get the current scroll position
   const scrollPosition = window.scrollY;
 
   // Calculate the logo's new size based on the scroll position
-  const newSize = 30 - (scrollPosition / 10); // adjust the values to your liking
+  const logoNewSize = 30 - (scrollPosition / 10); // adjust the values to your liking
+
+  // Calculate the nav bar's new height and padding based on the scroll position
+  const navBarNewHeight = 60 - (scrollPosition / 10); // adjust the values to your liking
+  const navBarNewPaddingTop = 15 - (scrollPosition / 10); // adjust the values to your liking
 
   // Update the logo's size
   if (scrollPosition <= 0) {
     // If the user has scrolled back to the top, reset the logo's size and position
-    logo.style.width = originalWidth;
-    logo.style.height = originalHeight;
-    logo.style.paddingTop = originalPaddingTop;
+    logo.style.width = originalLogoWidth;
+    logo.style.height = originalLogoHeight;
+    logo.style.paddingTop = originalLogoPaddingTop;
   } else {
     // Otherwise, update the logo's size based on the scroll position
     logo.style.width = `64px`;
     logo.style.height = `68px`;
-    logo.style.paddingTop = `3px`;
+    logo.style.paddingTop = `6px`;
+  }
+
+  // Update the nav bar's height and padding
+  if (scrollPosition <= 0) {
+    // If the user has scrolled back to the top, reset the nav bar's height and padding
+    navBar.style.height = originalNavBarHeight;
+    navBar.style.paddingTop = originalNavBarPaddingTop;
+    navBar.style.padding= originalNavBarpadding ;
+  } else {
+    // Otherwise, update the nav bar's height and padding based on the scroll position
+    navBar.style.height = `80px`;
+    navBar.style.paddingTop = `20px`;
+    
   }
 });
-
-// Initiate the wowjs
-new WOW().init();
 
 
     // Sticky Navbar
