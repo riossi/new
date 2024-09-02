@@ -11,9 +11,38 @@
     };
     spinner();
     
-    
-    // Initiate the wowjs
-    new WOW().init();
+ // Get the logo element
+const logo = document.getElementById('logo');
+
+// Store the original size and position of the logo
+const originalWidth = '100px';
+const originalHeight = '115px';
+const originalPaddingTop = '20px';
+
+// Add an event listener to the window's scroll event
+window.addEventListener('scroll', () => {
+  // Get the current scroll position
+  const scrollPosition = window.scrollY;
+
+  // Calculate the logo's new size based on the scroll position
+  const newSize = 30 - (scrollPosition / 10); // adjust the values to your liking
+
+  // Update the logo's size
+  if (scrollPosition <= 0) {
+    // If the user has scrolled back to the top, reset the logo's size and position
+    logo.style.width = originalWidth;
+    logo.style.height = originalHeight;
+    logo.style.paddingTop = originalPaddingTop;
+  } else {
+    // Otherwise, update the logo's size based on the scroll position
+    logo.style.width = `64px`;
+    logo.style.height = `68px`;
+    logo.style.paddingTop = `3px`;
+  }
+});
+
+// Initiate the wowjs
+new WOW().init();
 
 
     // Sticky Navbar

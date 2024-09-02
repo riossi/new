@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #0463FA;
+    --primary: #13afa2;
     --light: #EFF5FF;
     --dark: #1B2C51;
 }
@@ -16,6 +16,21 @@
 
 .fw-black {
     font-weight: 900 !important;
+}.logo-image {
+    width: 100px;
+    height: 115px;
+    padding-top: 20px;
+}
+.btn-primary {
+    background-color: #13afa2;
+    border-color: #13afa2;
+}
+.feature {
+    background-color: #13afa2;
+}
+
+.feature-bg {
+    background-color: #13afa2;
 }
 
 .back-to-top {
@@ -98,19 +113,22 @@
 	line-height: 42px;
 }
 .slider .single-slider h1 span{
-	color:#1a76d1;
+	color:#13afa2;
 }
 .slider .single-slider p {
 	color: #2C2D3F;
 	margin-top: 27px;
 	font-weight: 400;
 }
+.but{
+    background-color:#13afa2
+}
 .slider .single-slider .button{
 	margin-top:30px;
 }
 .slider .single-slider .btn{
 	color:#fff;
-	background:#1a76d1;
+	background:#13afa2;
 	font-weight:500;
 	display:inline-block;
 	margin:0;
@@ -124,7 +142,7 @@
 	color:#fff;
 }
 .slider .single-slider .btn.primary:before{
-	background:#1A76D1;
+	background:#13afa2;
 }
 .slider .owl-carousel .owl-nav {
 	margin: 0;
@@ -138,7 +156,7 @@
 	width: 50px;
 	line-height: 50px;
 	text-align: center;
-	background: #1A76D1;
+	background: #13afa2;
 	color: #fff;
 	font-size: 26px;
 	position: absolute;
@@ -183,17 +201,23 @@
 
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
-    padding: 25px 0;
+    padding: 50px 0;
     color: #FFFFFF;
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     outline: none;
+    transition: 0.5s;
+    
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
+}
+#site-header .header-main {
+    position: relative;
+    z-index: 11
 }
 
 @media (max-width: 991.98px) {
@@ -328,7 +352,7 @@
 }
 
 .page-header {
-    background: url(../img/header-page.jpg) top center no-repeat;
+    background: url(../im2/backabt2\ \(1\).png) top center no-repeat;
     background-size: cover;
     text-shadow: 0 0 30px rgba(0, 0, 0, .1);
 }
