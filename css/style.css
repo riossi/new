@@ -21,6 +21,12 @@
     height: 115px;
     padding-top: 20px;
 }
+.acs {
+    color: #008080;
+    display: inline-block;
+    margin-left: 10px; /* adjust the margin to your liking */
+   padding-top: 20px;
+  }
 .btn-primary {
     background-color: #13afa2;
     border-color: #13afa2;
