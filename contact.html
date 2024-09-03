@@ -122,7 +122,9 @@
                         <p class="d-inline-block border rounded-pill py-1 px-4">Contact Us</p>
                         <h1 class="mb-4">Have Any Query? Please Contact Us!</h1>
                         
-                        <form action="https://formsubmit.co/riossi2003@gmail.com" method="POST">
+                        <form action="https://api.web3forms.com/submit" method="POST" method="POST">
+                            <input type="hidden" name="access_key" value="06c1fa3a-56f4-4092-ba8e-3c2001650d0a">
+
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control border-0" name="Patient name" placeholder="Your Name" style="height: 55px;">
@@ -150,7 +152,7 @@
                                 </div>
                                 
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" rows="5" placeholder="Describe your problem"></textarea>
+                                    <textarea class="form-control border-0"  name="query" rows="5" placeholder="Describe your problem"></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Book Appointment</button>
