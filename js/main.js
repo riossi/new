@@ -16,9 +16,9 @@ const logo = document.getElementById('logo');
 const navBar = document.querySelector('nav.navbar');
 
 // Store the original size and position of the logo and nav bar
-const originalLogoWidth = '100px';
-const originalLogoHeight = '115px';
-const originalLogoPaddingTop = '20px';
+const originalLogoWidth = '120px';
+const originalLogoHeight = '125px';
+const originalLogoPaddingTop = '10px';
 const originalNavBarPaddingTop = '15px'; // adjust this value to your liking
 const originalNavBarHeight = '125px'; // adjust this value to your liking
 const originalNavBarpadding = '80px 0'; 
