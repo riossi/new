@@ -246,21 +246,22 @@
         /* padding: 10px 0; */
         height: 125px;
     }
-    .acs {
-       
-        padding-top: px;
-    }
+ }
    
-
+ .logo-image {
+    width: 120px;
+    height: 120px;
+    padding-top: 5px;
+}
 
     .navbar .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
-}
+
 
 .navbar .navbar-brand,
 .navbar a.btn {
-    height: 75px;
+    height: 125px;
 }
 
 .navbar .navbar-nav .nav-link {
