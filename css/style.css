@@ -17,16 +17,13 @@
 .fw-black {
     font-weight: 900 !important;
 }.logo-image {
-    width: 100px;
-    height: 115px;
-    padding-top: 20px;
+    width: 125px;
+    height: 120px;
+    padding-top: 7px;
 }
-.acs {
-    color: rgba(0, 0, 0, 0.874);
-    display: inline-block;
-    margin-left: 10px; /* adjust the margin to your liking */
-   padding-top: 20px;
-  }
+
+
+   
 .btn-primary {
     background-color: #13afa2;
     border-color: #13afa2;
@@ -125,6 +122,9 @@
 	color: #2C2D3F;
 	margin-top: 27px;
 	font-weight: 400;
+}
+.ps{
+    color: #13afa2;
 }
 .but{
     background-color:#13afa2
@@ -234,8 +234,19 @@
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
-        padding: 10px 0;
+        /* padding: 10px 0; */
+        height: 125px;
     }
+    .acs {
+       
+        padding-top: px;
+    }
+    .logo-image {
+        width: 125px;
+        height: 120px;
+        padding-top: 7px;
+    }
+
 
     .navbar .navbar-nav {
         border-top: 1px solid #EEEEEE;
@@ -275,7 +286,25 @@
         opacity: 1;
     }
 }
+@media (max-width: 991.98px) {
+    .navbar {
+        max-width: 100%;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+        display: inline-block;
+        margin-right: 0;
+        padding: 10px 0;
+    }
+}
 
+/* @media (max-width: 991.98px){
+    .acs{
+        width: 1px;
+    }
+} */
 
 /*** Header ***/
 .header-carousel .owl-carousel-text {
