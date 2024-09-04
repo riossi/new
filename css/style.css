@@ -17,9 +17,9 @@
 .fw-black {
     font-weight: 900 !important;
 }.logo-image {
-    width: 125px;
-    height: 100px;
-    padding-top: 7px;
+    width: 120px;
+    height: 120px;
+    padding-top: 5px;
 }
 .navbar {
     background-color: #f0f0f5 /* change the background color to a dark gray */
@@ -250,11 +250,7 @@
        
         padding-top: px;
     }
-    .logo-image {
-        width: 125px;
-        height: 120px;
-        padding-top: 7px;
-    }
+   
 
 
     .navbar .navbar-nav {
