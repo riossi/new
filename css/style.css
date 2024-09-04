@@ -17,9 +17,9 @@
 .fw-black {
     font-weight: 900 !important;
 }.logo-image {
-    width: 125px;
-    height: 100px;
-    padding-top: 7px;
+    width: 120px;
+    height: 120px;
+    padding-top: 5px;
 }
 .navbar {
     background-color: #f0f0f5 /* change the background color to a dark gray */
@@ -246,21 +246,18 @@
         /* padding: 10px 0; */
         height: 125px;
     }
-    .acs {
-       
-        padding-top: px;
-    }
-    .logo-image {
-        width: 125px;
-        height: 120px;
-        padding-top: 7px;
-    }
-
+ }
+   
+ .logo-image {
+    width: 120px;
+    height: 120px;
+    padding-top: 5px;
+}
 
     .navbar .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
-}
+
 
 .navbar .navbar-brand,
 .navbar a.btn {
@@ -293,7 +290,7 @@
         top: 100%;
         visibility: visible;
         transition: .5s;
-        opacity: 1;
+        /* opacity: 1; */
     }
 }
 @media (max-width: 991.98px) {
