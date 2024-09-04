@@ -289,7 +289,7 @@
         top: 100%;
         visibility: visible;
         transition: .5s;
-        opacity: 1;
+        /* opacity: 1; */
     }
 }
 @media (max-width: 991.98px) {
