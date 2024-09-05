@@ -236,7 +236,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: white;
+    color: #13afa2;
 }
 #site-header .header-main {
     position: relative;
