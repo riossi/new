@@ -114,8 +114,10 @@
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
+    // Destroy the datetime picker (if it exists) before re-initializing it
 
 
+    $('#date').datetimepicker();
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: false,
