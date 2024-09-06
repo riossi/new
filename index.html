@@ -403,11 +403,14 @@
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <div class="date" id="date" data-target-input="nearest">
-                                        <input type="date" name="date" placeholder="Date"
-                                            class="form-control border-0 datetimepicker-input"
-                                             >
-                                    </div>
+                                    <input id="date-picker" type="date" name="date" placeholder="Date" class="form-control border-0" />
+                                    <script>
+                                        mobiscroll.datepicker('#date-picker', {
+                                            theme: 'ios',
+                                            display: 'bottom',
+                                            lang: 'en'
+                                        });
+                                    </script>
                                 </div>
                                 
                             
